@@ -17,8 +17,10 @@
 </body>
 
 <script> 
-  var map = L.map('map').setView([51.505, -0.09], 13); 
+  var map = L.map('map').setView([51.505, -114], 4); 
   L.tileLayer('http://{s}.tiles.mapbox.com/v3/beekay.h0pgm466/{z}/{x}/{y}.jpg').addTo(map);
+var geojson= {"type":"FeatureCollection","features":[{"type":"Feature","properties":{"marker-color":"#48ec11","marker-size":"medium","marker-symbol":""},"geometry":{"type":"Point","coordinates":[-114.0380859375,51.08282186160976]}},{"type":"Feature","properties":{"stroke":"#555555","stroke-width":2,"stroke-opacity":1,"fill":"#555555","fill-opacity":0.3},"geometry":{"type":"Polygon","coordinates":[[[-115.33447265625,49.167338606291075],[-115.33447265625,52.482780222078205],[-110.6982421875,52.482780222078205],[-110.6982421875,49.167338606291075],[-115.33447265625,49.167338606291075]]]}}]};
+L.geoJson(geojson).addTo(map);
 </script>
 
 </html>
