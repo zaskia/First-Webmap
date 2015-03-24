@@ -1,0 +1,24 @@
+<html>
+<head>
+<title> My maptime webmap </title>
+ <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+ <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+  <style>
+  #map{
+    height:100%;
+  }
+  </style>
+</head>
+
+<body>
+
+<div id="map"> </div>
+
+</body>
+
+<script> 
+  var map = L.map('map').setView([51.505, -0.09], 13); 
+  L.tileLayer('http://{s}.tiles.mapbox.com/v3/beekay.h0pgm466/{z}/{x}/{y}.jpg').addTo(map);
+</script>
+
+</html>
